@@ -1,23 +1,23 @@
-const ApiError = require("./lib/error");
-const ModelVersionIdentifier = require("./lib/identifier");
-const { createReadableStream } = require("./lib/stream");
-const {
+import ApiError from "./lib/error.js";
+import ModelVersionIdentifier from "./lib/identifier.js";
+import { createReadableStream } from "./lib/stream.js";
+import {
   withAutomaticRetries,
   validateWebhook,
   parseProgressFromLogs,
   streamAsyncIterator,
-} = require("./lib/util");
+} from "./lib/util.js";
 
-const accounts = require("./lib/accounts");
-const collections = require("./lib/collections");
-const deployments = require("./lib/deployments");
-const hardware = require("./lib/hardware");
-const models = require("./lib/models");
-const predictions = require("./lib/predictions");
-const trainings = require("./lib/trainings");
-const webhooks = require("./lib/webhooks");
+import * as accounts from "./lib/accounts.js";
+import * as collections from "./lib/collections.js";
+import * as deployments from "./lib/deployments.js";
+import * as hardware from "./lib/hardware.js";
+import * as models from "./lib/models.js";
+import * as predictions from "./lib/predictions.js";
+import * as trainings from "./lib/trainings.js";
+import * as webhooks from "./lib/webhooks.js";
 
-const packageJSON = require("./package.json");
+import packageJSON from "./package.json";
 
 /**
  * Replicate API client library
