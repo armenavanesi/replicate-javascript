@@ -17,7 +17,7 @@ import * as predictions from "./lib/predictions.js";
 import * as trainings from "./lib/trainings.js";
 import * as webhooks from "./lib/webhooks.js";
 
-import packageJSON from "./package.json";
+import packageJSON from "./package.json" assert { type: "json" };
 
 /**
  * Replicate API client library
