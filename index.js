@@ -391,3 +391,4 @@ class Replicate {
 module.exports = Replicate;
 module.exports.validateWebhook = validateWebhook;
 module.exports.parseProgressFromLogs = parseProgressFromLogs;
+export default Replicate;
